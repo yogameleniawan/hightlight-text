@@ -2,10 +2,12 @@ import React from 'react'
 
 interface HighlightTextI {
     text: string,
-    highlight: string
+    highlight: string,
+    color?: string,
+    backgroundColor?: string
 }
 
-const HighlightText = ({ text, highlight }: HighlightTextI) => {
+const HighlightText = ({ text, highlight, color, backgroundColor }: HighlightTextI) => {
 
     const highlightTextWrapper = (text: string, highlight: string): JSX.Element => {
         const parts = text.split(new RegExp(`(${highlight})`, 'gi'));
@@ -13,7 +15,7 @@ const HighlightText = ({ text, highlight }: HighlightTextI) => {
             <span>
                 {parts.map((part: string, index: number) =>
                     part.toLowerCase() === highlight.toLowerCase() ? (
-                        <span key={index} style={{ backgroundColor: 'red', color: 'white' }}>
+                        <span key={index} style={{ backgroundColor: backgroundColor ?? 'red', color: color ?? 'white' }}>
                             {part}
                         </span>
                     ) : (
