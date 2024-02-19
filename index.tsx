@@ -1,6 +1,11 @@
 import React from 'react'
 
-const HighlightText = (text: string, highlight: string) => {
+interface HighlightTextI {
+    text: string,
+    highlight: string
+}
+
+const HighlightText = ({ text, highlight }: HighlightTextI) => {
 
     const highlightTextWrapper = (text: string, highlight: string): JSX.Element => {
         const parts = text.split(new RegExp(`(${highlight})`, 'gi'));
