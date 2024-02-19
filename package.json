@@ -1,5 +1,5 @@
 {
-  "name": "highlight-text",
+  "name": "react-highlight-text",
   "version": "1.0.0",
   "description": "Highlight text for React/Next JS Element",
   "main": "index.js",
