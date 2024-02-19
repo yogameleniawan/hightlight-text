@@ -1,0 +1,20 @@
+{
+  "name": "highlight-text",
+  "version": "1.0.0",
+  "description": "Highlight text for React/Next JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "react",
+    "next"
+  ],
+  "author": "Yoga Meleniawan Pamungkas",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.2.56",
+    "typescript": "^5.3.3"
+  }
+}
